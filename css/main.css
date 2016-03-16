@@ -144,6 +144,11 @@ div.new-notification a{
   color: #CC2929;
 }
 
+.thumbnail a>img {
+      max-height: 200px;
+    min-height: 200px;
+}
+
 @media (max-width: 768px) {
   #wrapper {
     padding-left: 0;
