@@ -20,7 +20,9 @@
 			</div>
 			
 			<strong>Date Added:</strong> {{portfolioData.date | date}}<br>
-			<strong>Comments:</strong> {{portfolioData.comments}}<br>
+			<div ng-if="portfolioData.comments">
+			<strong>Comment:</strong> {{portfolioData.comments}}<br>
+			</div>
 		</div>
 	</div>
 
