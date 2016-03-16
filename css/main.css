@@ -91,6 +91,7 @@ a {
   -ms-transition: all .50s ease;
   -o-transition: all .50s ease;
   transition: all .50s ease;
+  color: #CC2929;
 }
 
 a:hover {
@@ -147,6 +148,26 @@ div.new-notification a{
 a.thumbnail >img {
     max-height: 200px;
     min-height: 200px;
+}
+
+a.thumbnail {
+  color: #CC2929;
+}
+
+.panel-default {
+    border-color: #ddd;
+    min-height: 440px;
+}
+
+.quick-link.panel-default {
+    border-color: #ddd;
+    min-height: auto;
+}
+
+.panel-default>.panel-heading {
+  color: #fff;
+    background-color: #000;
+
 }
 
 @media (max-width: 768px) {
