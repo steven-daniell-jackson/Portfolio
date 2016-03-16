@@ -13,7 +13,12 @@
 			<br><br>
 
 			<strong>Platform:</strong> {{portfolioData.platform}} <br>
-			<strong>URL:</strong>  {{portfolioData.url}} <br>
+
+			<div ng-if="portfolioData.url">
+			<strong>URL:</strong>  
+			<a href="{{portfolioData.url}}" target="_blank">Link</a><br>
+			</div>
+			
 			<strong>Date Added:</strong> {{portfolioData.date | date}}<br>
 			<strong>Comments:</strong> {{portfolioData.comments}}<br>
 		</div>

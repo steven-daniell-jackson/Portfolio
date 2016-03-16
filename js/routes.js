@@ -14,22 +14,34 @@ app.config(['$routeProvider',
         })
         .when('/recent', {
             templateUrl: 'templates/recent.html',
-            controller: 'portfolioCtrl'
+            controller: 'recentPortfolioCtrl'
         })
         .when('/latest', {
             templateUrl: 'templates/latest.html',
-            controller: 'portfolioCtrl'
+            controller: 'latestPortfolioCtrl'
         })
         .when('/previous', {
             templateUrl: 'templates/previous.html',
-            controller: 'portfolioCtrl'
+            controller: 'previousPortfolioCtrl'
+        })
+        .when('/newsletters', {
+            templateUrl: 'templates/newsletters.html',
+            controller: 'newsletterPortfolioCtrl'
+        })
+        .when('/landingpages', {
+            templateUrl: 'templates/landingpages.html',
+            controller: 'landingpagesPortfolioCtrl'
+        })
+        .when('/other', {
+            templateUrl: 'templates/other.html',
+            controller: 'otherPortfolioCtrl'
         })
         .when('/contact', {
             templateUrl: 'templates/contact.html',
         })
         .when('/new-entry', {
             templateUrl: 'templates/new-entry.html',
-            controller: 'newPortfolioCtrl'
+            controller: 'otherPortfolioCtrl'
         })
         .otherwise({
             redirectTo: '/home'

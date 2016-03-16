@@ -7,10 +7,143 @@ $scope.preloader = true;
 // Access factory and assign the returned data
 PortfolioFac.all()
 .success(function(data) {
-	console.log(data);
+	
             $scope.entries = data;
-            $scope.entries.reverse()
-            console.log($scope.entries)
+            // $scope.entries.reverse()
+            $scope.preloader = false;
+            // console.log($scope.entries);
+        })
+        .error(function(data) {
+            console.log('Error: ' + data);
+        });
+
+
+        
+
+})
+
+.controller('recentPortfolioCtrl', function($scope, PortfolioFac) {
+
+$scope.preloader = true;
+
+// Access factory and assign the returned data
+PortfolioFac.recent()
+.success(function(data) {
+    
+            $scope.entries = data;
+            // $scope.entries.reverse()
+            $scope.preloader = false;
+            // console.log($scope.entries);
+        })
+        .error(function(data) {
+            console.log('Error: ' + data);
+        });
+
+
+        
+
+})
+
+
+.controller('latestPortfolioCtrl', function($scope, PortfolioFac) {
+
+$scope.preloader = true;
+
+// Access factory and assign the returned data
+PortfolioFac.latest()
+.success(function(data) {
+    
+            $scope.entries = data;
+            // $scope.entries.reverse()
+            $scope.preloader = false;
+            // console.log($scope.entries);
+        })
+        .error(function(data) {
+            console.log('Error: ' + data);
+        });
+
+
+        
+
+})
+
+.controller('previousPortfolioCtrl', function($scope, PortfolioFac) {
+
+$scope.preloader = true;
+
+// Access factory and assign the returned data
+PortfolioFac.previous()
+.success(function(data) {
+    
+            $scope.entries = data;
+            // $scope.entries.reverse()
+            $scope.preloader = false;
+            // console.log($scope.entries);
+        })
+        .error(function(data) {
+            console.log('Error: ' + data);
+        });
+
+
+        
+
+})
+
+.controller('newsletterPortfolioCtrl', function($scope, PortfolioFac) {
+
+$scope.preloader = true;
+
+// Access factory and assign the returned data
+PortfolioFac.newsletter()
+.success(function(data) {
+    
+            $scope.entries = data;
+            // $scope.entries.reverse()
+            $scope.preloader = false;
+            // console.log($scope.entries);
+        })
+        .error(function(data) {
+            console.log('Error: ' + data);
+        });
+
+
+        
+
+})
+
+.controller('landingpagesPortfolioCtrl', function($scope, PortfolioFac) {
+
+$scope.preloader = true;
+
+// Access factory and assign the returned data
+PortfolioFac.landingpages()
+.success(function(data) {
+    
+            $scope.entries = data;
+            // $scope.entries.reverse()
+            $scope.preloader = false;
+            // console.log($scope.entries);
+        })
+        .error(function(data) {
+            console.log('Error: ' + data);
+        });
+
+
+        
+
+})
+
+
+.controller('otherPortfolioCtrl', function($scope, PortfolioFac) {
+
+$scope.preloader = true;
+
+// Access factory and assign the returned data
+PortfolioFac.other()
+.success(function(data) {
+    
+            $scope.entries = data;
+            // $scope.entries.reverse()
             $scope.preloader = false;
             // console.log($scope.entries);
         })
