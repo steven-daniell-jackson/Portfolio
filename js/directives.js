@@ -7,7 +7,7 @@ angular.module('portfolio-directives', [])
     scope: { 
       info: '=' 
     }, 
-    templateUrl: '../templates/partials/navbar.html' 
+    templateUrl: 'templates/partials/navbar.html' 
   }; 
 })
 
@@ -17,6 +17,6 @@ angular.module('portfolio-directives', [])
     scope: { 
       portfolioData: '=' 
     }, 
-    templateUrl: '../templates/partials/portfolio-item.html' 
+    templateUrl: 'templates/partials/portfolio-item.html' 
   }; 
 });
