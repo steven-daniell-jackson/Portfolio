@@ -1,0 +1,23 @@
+
+<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">{{portfolioData.clientName}}</h3>
+		</div>
+		<div class="panel-body">
+			<a class="thumbnail" href="img/{{portfolioData.imgsrc}}" target="_blank">
+				<img class="img-responsive" src="img/thumb/{{portfolioData.imgsrc}}" alt="">
+			</a>
+			Click the image to view the full resolution image
+			<br><br>
+
+			<strong>Platform:</strong> {{portfolioData.platform}} <br>
+			<strong>URL:</strong>  {{portfolioData.url}} <br>
+			<strong>Date Added:</strong> {{portfolioData.date | date}}<br>
+			<strong>Comments:</strong> {{portfolioData.comments}}<br>
+		</div>
+	</div>
+
+
+</div>
