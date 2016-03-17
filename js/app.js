@@ -1,4 +1,4 @@
-var app = angular.module('desktopResume', [
+var app = angular.module('desktopPortfolio', [
 'portfolioRoutes', 
 'portfolio-directives', 
 'app.controllers', 
