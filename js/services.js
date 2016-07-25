@@ -9,7 +9,7 @@ angular.module('app.services', [])
 // Create post factory to post data to api
 	portfolioFactory.create = function(portfolioData){
 
-		return	$http.post('http://boiling-mesa-13925.herokuapp.com/api/add-portfolio',portfolioData)
+		return	$http.post('http://localhost:3000/api/add-portfolio',portfolioData)
 	}
 
 // Create get factory to retrieve data from api
